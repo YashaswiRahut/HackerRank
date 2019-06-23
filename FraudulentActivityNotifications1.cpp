@@ -4,7 +4,6 @@ using namespace std;
 
 vector<string> split_string(string);
 
-// Complete the activityNotifications function below.
 int activityNotifications(vector<int> expenditure, int d) {
 
 int a=0,i,j,k,m,c=0;
