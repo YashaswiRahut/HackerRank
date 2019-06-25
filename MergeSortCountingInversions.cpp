@@ -13,6 +13,9 @@ long merge (vector<int> a,int left,int right)
             
             x=merge(a,left,(right - left)/2);
             y=merge(a,(right - left)/2+1,right);  
+        }
+        else
+        {
             for(int i=left,j=(right - left)/2+1;i<=(right - left)/2;i++,j++)
             {
                 if(j<=right)
@@ -33,10 +36,7 @@ long merge (vector<int> a,int left,int right)
                     break;
             }
         }
-        else
-        {
-            return x;
-        }
+       return x;
     }
 
 // Complete the countInversions function below.
