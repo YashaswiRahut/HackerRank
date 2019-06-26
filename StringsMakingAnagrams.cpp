@@ -11,7 +11,7 @@ int makeAnagram(string a, string b) {
     for(auto i:b)
         --count[i-'a'];
     for(auto i:count)
-        n+=count[i];
+        n+=abs(i);
     return n;
 }
 
