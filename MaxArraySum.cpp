@@ -22,11 +22,11 @@ int Sum(int index, int sum,vector<int> _arr)
             {
                 sumDict[index] = new Tuple<int, int>( sum, sumDict[index].Item2);
                 return sumDict[index].Item2;
-            }*/
+            }
             if(sumDict.find(index) && sumDict[index].item1>=sum)
             {
                 sumDict[index]=
-            }
+            }*/
             return Maxi(Sum(index + 2, sum + _arr[index],_arr),Sum(index + 1, sum,_arr));
         }
 
